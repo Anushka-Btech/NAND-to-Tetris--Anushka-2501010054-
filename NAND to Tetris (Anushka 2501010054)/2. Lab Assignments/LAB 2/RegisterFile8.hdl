@@ -1,4 +1,5 @@
-CHIP RAM8 {
+// 8 x 16-bit register file; address selects the register to read/write.
+CHIP RegisterFile8 {
     IN in[16], load, address[3];
     OUT out[16];
     PARTS:
